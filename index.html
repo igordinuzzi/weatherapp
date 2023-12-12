@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Today's Weather Wonderland</title>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+     <!-- Bootstrap CSS -->
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+     <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="d-flex justify-content-center align-items-center full-height-center">
+        <div class="container text-center">
+            <h1 class="mb-4">Today's Weather Wonderland</h1>
+            <button id="modeToggle"><i class="fas fa-sun"></i> Dark/Light</button>
+            <button id="toggleUnitButton"><i class="fas fa-temperature-high"></i> Toggle Temperature Unit (°C/°F)</button>            
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="input-group mb-3">
+                        <input type="text" id="cityInput" class="form-control" placeholder="Enter city name">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary btn-block" onclick="validateAndFetchWeather()">Search</button>
+                        </div>
+                    </div>
+                    <span id="inputError"></span> <!-- Error message display -->
+                </div>
+            </div>            
+            <!-- Add the temperature unit button and display here -->
+            <div id="weather" class="mt-4">
+                <!-- Weather Image -->
+                <img id="weatherImage" src="" alt="Weather Image" class="img-fluid mx-auto d-block rounded weather-image">
+                <p><b><i class="fa-solid fa-location-dot"></i> City:</b> <span id="city"></span></p>
+                <p><b><i class="fa-solid fa-temperature-three-quarters"></i> Temperature:</b> <span id="temp"></span></p>
+                <p><b><i class="fa-regular fa-sun"></i> Weather:</b> <span id="weatherDesc"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center text-lg-start sticky-footer">
+        <div class="container p-4">
+            <a class="text-dark" href="https://github.com/igordinuzzi" target="_blank" aria-label="Visit Igor's GitHub profile">
+            <i class="fa-brands fa-github"></i> Made by Igor
+            </a>
+        </div>
+    </footer>
+
+
+    <script src="script/weatherLoader.js"></script>
+    <script src="script/themeToggle.js"></script>
+</body>
+</html>
