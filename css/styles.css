@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+/* Light mode styles */
+.light-mode {
+    background: linear-gradient(to bottom, #edf9ff, #99c4e8); /* Gradient from #edf9ff to #99c4e8 */
+    color: #000; /* Dark text for better readability */
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background: linear-gradient(to bottom, #230f6e, #4d37bd); /* Gradient from #230f6e to #4d37bd */
+    color: #FAFAFA; /* Light text */
+}
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.full-height-center {
+    min-height: 100vh;
+}
+
+.weather-image {
+    max-width: 150px;
+    margin: 20px; 
+}
+
+h1 {
+    color: #230f6e;
+}
+
+.dark-mode h1 {
+    color: #99c4e8;
+}
+
+p {
+    font-size: 24px;
+}
+
+#cityInput {
+    border: 2px solid #4d37bd;
+    border-radius: 30px;
+    padding: 12px 24px; /* Keep padding as is */
+    font-size: 16px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    background: #edf9ff;
+}
+
+#cityInput:focus {
+    outline: none;
+    border-color: #230f6e;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background: white;
+}
+
+.btn-primary {
+    background-color: #230f6e;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 24px; /* Adjust padding slightly to match input field's height */
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    margin-left: 10px;
+    font-size: 16px; /* Match font size with input */
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: #4d37bd;
+}
+
+.dark-mode .btn-primary {
+    background-color: #99c4e8;
+    color: #230f6e;
+}
+
+.dark-mode .btn-primary:hover, .btn-primary:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: #e2e2e2;
+}
+
+
+#weather {
+    background-color: rgba(0, 0, 0, 0.1); /* Dark semi-transparent background for dark mode */
+    padding: 20px;
+    border-radius: 15px; /* Rounded corners */
+    margin-top: 20px; /* Spacing from the top elements */
+}
+
+/* Dark mode specific styles */
+.dark-mode #weather {
+    background-color: rgba(0, 0, 0, 0.8); /* Dark semi-transparent background for dark mode */
+    color: #fafafa; /* Light text color for dark mode */
+}
+
+#modeToggle {
+    background-color: #fff; /* Background color */
+    color: #4d37bd; /* Text color */
+    border: 2px solid #4d37bd;
+    padding: 10px 20px; /* Vertical and horizontal padding */
+    font-size: 16px; /* Text size */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Cursor changes to pointer to indicate it's clickable */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin: 20px; /* Margin around the button */
+}
+
+#modeToggle:hover, #modeToggle:focus {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+    transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+/* Adjustments for dark mode */
+.dark-mode #modeToggle {
+    background-color: #292929; /* Dark mode button color */
+    color: #e2e2e2; /* Light text for dark mode */
+    border: 2px solid #99c4e8;
+}
+
+.dark-mode #modeToggle:hover, .dark-mode #modeToggle:focus {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+    transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+#toggleUnitButton {
+    background-color: #fff; /* Background color */
+    color: #4d37bd; /* Text color */
+    border: 2px solid #4d37bd;
+    padding: 10px 20px; /* Vertical and horizontal padding */
+    font-size: 16px; /* Text size */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Cursor changes to pointer to indicate it's clickable */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    margin: 20px; /* Margin around the button */
+}
+
+#toggleUnitButton:hover, #toggleUnitButton:focus {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow for depth */
+    transform: scale(1.05); /* Slightly enlarges the button */
+}
+
+/* Adjustments for dark mode */
+.dark-mode #toggleUnitButton {
+    background-color: #292929; /* Dark mode button color */
+    color: #e2e2e2; /* Light text for dark mode */
+    border: 2px solid #99c4e8;
+}
+
+.dark-mode #toggleUnitButton:hover, .dark-mode #toggleUnitButton:focus {
+    background-color: #1e1e1e; /* Slightly lighter shade for dark mode hover/focus */
+}
+
+
+#inputError {
+    color: red; /* Color for error messages */
+    margin-top: 5px; /* Spacing above the error message */
+    font-size: 14px; /* Font size for the error message */
+}
+
+i {
+    color: #4d37bd;
+}
+
+.dark-mode i {
+    color: #99c4e8;
+}
+
+/* Sticky footer */
+.sticky-footer {
+    width: 100%;
+}
+
+.sticky-footer i {
+    color: #4d37bd;
+}
