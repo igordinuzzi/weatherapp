@@ -1,4 +1,4 @@
-# README for Today's Weather Wonderland Web Application
+# Today's Weather Wonderland Web Application
 
 # Table of Contents
 - [Overview](#overview)
@@ -23,17 +23,27 @@
 ## Overview
 Today's Weather Wonderland is a web application that displays real-time weather information for any city. It offers features like toggling between dark and light themes, and switching temperature units between Celsius and Fahrenheit. The app uses the OpenWeatherMap API for fetching weather data.
 
+![mockup](doc/mockup.jpg)
+
 ## Features
 - **Theme Toggle**: Users can switch between a light and dark theme.
+![feature1](doc/feature-01.jpg)
+![feature2](doc/feature-02.jpg)
 - **Temperature Unit Toggle**: Users can toggle the temperature display between Celsius and Fahrenheit.
+![feature3](doc/feature-03.jpg)
+![feature4](doc/feature-04.jpg)
 - **City Search**: Enter a city name to fetch and display its current weather conditions.
+![feature5](doc/feature-05.jpg)
 - **Geolocation Support**: Automatically fetches weather data based on the user's current location.
+![feature6](doc/feature-06.jpg)
 
 ### themeToggle.js
 Manages theme toggling between dark and light modes.
+![feature7](doc/feature-07.jpg)
 
 ### weatherLoader.js
 Contains functionality for fetching and displaying weather data.
+![feature8](doc/feature-08.jpg)
 
 ## Learning Outcomes (From a Student's Perspective)
 As a student, working on this project helped me understand real-world applications of JavaScript, especially in fetching and handling data from external APIs like OpenWeatherMap. I learned how to implement geolocation services, toggle functionalities for theme and temperature units, and dynamically update the UI. Additionally, I gained experience in responsive web design using Bootstrap and enhanced my problem-solving skills through debugging and validating user inputs.
@@ -44,6 +54,8 @@ As a student, working on this project helped me understand real-world applicatio
 3. **Student**: Uses the app to learn about weather patterns in various global cities.
 
 ## Design Elements
+![wireframes](doc/wireframes.jpg)
+![icons](doc/icons.jpg)
 - **Layout**: Clean and intuitive interface, with a focus on usability.
 - **Color Scheme**: Contrasting colors for the dark and light themes to ensure readability.
 - **Icons and Imagery**: Weather-related icons for a more engaging user experience.
