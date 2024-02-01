@@ -23,7 +23,7 @@
 ## Overview
 Today's Weather Wonderland is a web application that displays real-time weather information for any city. It offers features like toggling between dark and light themes, and switching temperature units between Celsius and Fahrenheit. The app uses the OpenWeatherMap API for fetching weather data. [Check out my Weather App](https://igordinuzzi.github.io/weatherapp/)
 
-![mockup](doc/mockup.jpg)
+![mockup](doc/mockup.png)
 
 ## Features
 - **Theme Toggle**: Users can switch between a light and dark theme.
