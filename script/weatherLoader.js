@@ -71,7 +71,7 @@ function showError(error) {
 function updateWeatherData(data) {
     const tempDisplay = document.getElementById('temp');
     if (isCelsius) {
-        tempDisplay.textContent = data.main.temp + "°C";
+        tempDisplay.textContent = Math.round(data.main.temp) + "°C";
     } else {
         tempDisplay.textContent = convertToFahrenheit(data.main.temp) + "°F";
     }
